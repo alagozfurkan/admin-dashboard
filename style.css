@@ -51,7 +51,7 @@
     background-color: gold;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr 1.2fr;
+    grid-template-columns: 1fr 6fr ;
     grid-template-rows: 1.1fr 2.5fr 2.5fr ;
   }
 
@@ -83,6 +83,9 @@
     background-color: rgb(62, 148, 163);
     grid-column: 2 / 3;
     grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 5fr 1.5fr;
+    grid-template-rows: 0.8fr 5fr 0.8fr 5fr;
   }
 
   .rightsidebar {
@@ -143,7 +146,7 @@
   .searchbar {
     display: flex;
     gap: 10px;
-    margin-left: 30px;
+    margin-left: 45px;
     margin-top: 10px;
   }
 
@@ -167,7 +170,7 @@
   .profile {
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 45px;
     gap: 20px;
   }
   
@@ -182,11 +185,33 @@
   .buttons {
     display: flex;
     gap: 38px;
-    margin-left: 225px;
+    margin-left: 63px;
   }
-
+  button {
+    padding: 5px;
+    border-radius: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+  }
   .profile p {
     line-height: 1.25;
+  }
+
+  .projectsum {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .content {
+    width: 350px;
+    height: 200px;
+    background-color: antiquewhite;
   }
 
 
