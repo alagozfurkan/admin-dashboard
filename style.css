@@ -52,7 +52,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr 1.2fr;
-    grid-template-rows: 1fr 2.5fr 2.5fr ;
+    grid-template-rows: 1.1fr 2.5fr 2.5fr ;
   }
 
   .header {
@@ -60,6 +60,11 @@
     background-color: rgb(203, 233, 235);
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1.3fr;
+    justify-content: center;
+    align-items: center;
   }
 
   .leftsidebar {
@@ -92,6 +97,8 @@
     width: 25px;
     margin-top: 5px;
   }
+
+  
 
   .searchbar img {
     height: 25px;
@@ -135,15 +142,59 @@
 
   .searchbar {
     display: flex;
+    gap: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
   }
 
   .account {
     display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 250px;
+  }
+  
+  .accountimage {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .profileimage {
+    height: 80px;
+    width: 80px;
   }
 
   .profile {
     display: flex;
+    align-items: center;
+    margin-left: 30px;
+    gap: 20px;
   }
   
+  .smalltext {
+    font-size: 15px;
+  }
+
+  .largetext {
+    font-size: 25px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 38px;
+    margin-left: 225px;
+  }
+
+  .profile p {
+    line-height: 1.25;
+  }
+
+
+
+  input {
+    border-radius: 15px;
+    border-color: rgb(198, 199, 201);
+    background-color:rgb(198, 199, 201);
+  }
 
 
