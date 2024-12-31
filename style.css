@@ -1,3 +1,5 @@
+@import url(https://fonts.bunny.net/css?family=abel:400|abhaya-libre:400,500,600|aldrich:400);
+
 :root {
   --main-color: #78350f;
   --button-color: #fde68a;
@@ -14,6 +16,7 @@
   /* 2. Remove default margin */
   * {
     margin: 0;
+    font-family: 'ABeeZee', sans-serif;
   }
   
   body {
@@ -133,6 +136,10 @@
     gap: 12px;
   }
 
+  .navigator:hover {
+    margin-left: 15px;
+  }
+
   .title h1 {
     color: var(--button-color);
   }
@@ -151,6 +158,10 @@
   .navigator p {
     color: var(--button-color);
     height: max-content;
+    font-size: 22.5px;
+  }
+
+  .navigator p:hover {
     font-size: 23.5px;
   }
 
@@ -188,11 +199,11 @@
   }
   
   .smalltext {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .largetext {
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .buttons {
@@ -209,6 +220,12 @@
     padding-right: 35px;
     border: none;
   }
+
+  button:hover {
+    background-color: var(--project-backround);
+    color: #78350f;
+  }
+
   .profile p {
     line-height: 1.25;
   }
@@ -220,6 +237,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     
     
+    
   }
 
   .content {
@@ -229,7 +247,13 @@
     background-color: var(--back-main-color);
     margin-left: 40px;
     border-left: 5px solid red;
-    box-shadow: 2px 10px 8px 10px #f59e0b;
+    box-shadow: 0 4px 8px 0#f59e0b, 0 6px 20px 0 #f59e0b; 
+    
+  }
+
+  .content:hover {
+    box-shadow: 6px 6px 6px 6px #f59e0b;
+    border-left: 5px solid rgb(35, 17, 202);
     
   }
   
@@ -237,18 +261,22 @@
     width: 90%;
     height: 60%;
     margin-left: 20px;
+    font-size: 15.5px;
     
   }
+
+
 
   .content h2 {
     margin-top: 20px;
     margin-left: 20px;
+    font-size: 17.5px;
   }
   .contentsymbol {
     display: flex;
-    margin-left: 245px;
-    margin-top: px;
-    gap: 8px;
+    margin-left: 230px;
+    
+    gap: 10px;
   }
 
   .contentsymbol img {
@@ -256,15 +284,13 @@
     height: 26px;
   }
 
-  .projects > p {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-left: 40px;
+  .content img:hover {
+    margin-top: 3px;
   }
+  
 
   .announcements {
-    
+    box-shadow: 0 4px 8px 0#f59e0b, 0 6px 20px 0 #f59e0b;
     background-color: var(--back-main-color);
     border-radius: 15px;
     width: 300px;
@@ -275,14 +301,15 @@
   }
 
   .announcements p {
-    font-size: 12px;
+    font-size: 11px;
     height: 50px;
-    width: 250px;
+    width: 240px;
     margin-left: 30px;
+    color: rgb(37, 37, 37);
   }
 
   .announcements h3 {
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 30px;
   }
 
@@ -298,6 +325,7 @@
   }
 
   .trending {
+    box-shadow: 0 4px 8px 0#f59e0b, 0 6px 20px 0 #f59e0b;
     background-color:var(--back-main-color);
     width: 300px;
     height: 300px;
@@ -307,6 +335,11 @@
     justify-content: space-around;
     align-items: center;
     
+  }
+
+  .trending p {
+    color: rgb(44, 43, 43);
+    font-size: 14px;
   }
 
   .trendingprofile {
@@ -320,12 +353,28 @@
     height: 60px;
     
   }
+
+  .innertitleone {
+    
+    margin-left: 48px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+  }
   
+  .innertitle {
+    font-size: 17px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
 
   input {
     border-radius: 15px;
-    border-color: rgb(198, 199, 201);
-    background-color:rgb(225, 226, 228);
+    border-color: #fcd34d;
+    background-color:#fcd34d;
+    
   }
 
 
